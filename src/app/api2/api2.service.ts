@@ -3,9 +3,11 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Injectable({
+
   providedIn: 'root'
+  
 })
-export class api2Service {
+export class Api2Service {
   private apiUrl = "https://jsonplaceholder.typicode.com/todos/"  
 
   constructor(private http: HttpClient) { }

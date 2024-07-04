@@ -1,13 +1,8 @@
 <mat-toolbar color="accent">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span>App Cibertec</span>
-    &nbsp;&nbsp;
-    <button mat-button (click)="irApi1()">Curso</button>
-    &nbsp;&nbsp;
-    <button mat-button (click)="irApi2()">Estado</button>
-  </mat-toolbar>
-
-  <hr />
+  <span>Menú</span>
+  &nbsp;&nbsp;
+  <button mat-button (click)="irApi1()">Api1</button>
+  &nbsp;&nbsp;
+  <button mat-button (click)="irApi2()">Api2</button>
+</mat-toolbar>
 <router-outlet></router-outlet>
