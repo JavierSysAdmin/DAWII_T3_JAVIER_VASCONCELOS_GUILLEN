@@ -1,13 +1,23 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
+import { MaterialModule } from './material/material/material.module';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, MaterialModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'DAWII_T3_JAVIER_VASCONCELOS_GUILLEN';
+  constructor(private router: Router,
+    private route: ActivatedRoute,
+  ){
+    }
+  irApi1(): void{
+    this.router.navigate(["Api1"], {relativeTo: this.route});
+  }
+  irApi2(): void{
+    this.router.navigate(["Api2"], {relativeTo: this.route});
+  }
 }
