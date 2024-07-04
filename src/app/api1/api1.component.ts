@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { MaterialModule } from '../material/material/material.module';
 import { Api1Service } from './api1.service';
+import { MaterialModule } from '../angular-cl3/material/material.module';
 
 @Component({
   selector: 'app-api1',

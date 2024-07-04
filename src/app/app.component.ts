@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
-import { MaterialModule } from './material/material/material.module';
+import { MaterialModule } from './angular-cl3/material/material.module';
 
 @Component({
   selector: 'app-root',

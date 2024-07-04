@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { MaterialModule } from '../material/material/material.module';
+import { MaterialModule } from '../angular-cl3/material/material.module';
 import { Api2Service } from './api2.service';
 
 @Component({
